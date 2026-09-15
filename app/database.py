@@ -1,0 +1,23 @@
+products_db = [
+    {
+        "id": 1,
+        "name": "Laptop",
+        "price": 1200.00,
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "name": "Keyboard",
+        "price": 80.00,
+        "stock": 25
+    },
+    {
+        "id": 3,
+        "name": "Mouse",
+        "price": 40.00,
+        "stock": 50
+    }
+]
+
+
+orders_db = []
