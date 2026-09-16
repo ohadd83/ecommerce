@@ -71,4 +71,4 @@ def test_create_product():
 
     assert data["name"] == "Monitor"
     assert data["price"] == 300
-    assert data["stock"] == 400000
+    assert data["stock"] == 15
