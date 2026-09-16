@@ -86,7 +86,7 @@ def test_complete_flow():
             )
     assert response.status_code == 200
 
-    product = response.json
+    product = response.json()
     product_id = product["id"]
 
     response = client.post(
