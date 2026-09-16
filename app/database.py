@@ -16,7 +16,7 @@ products_db = [
         "name": "Mouse",
         "price": 40.00,
         "stock": 50
-    }
+    },
     {   
         "id": 4,
         "name": "MobilePhone",
