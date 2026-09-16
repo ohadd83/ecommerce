@@ -52,3 +52,23 @@ def test_create_order():
     assert data["product_id"] == 1
     assert data["quantity"] == 2
     assert data["status"] == "created"
+
+
+def test_create_product():
+
+    response = client.post(
+        "/products/",
+        json={
+            "name": "Monitor",
+            "price": 300,
+            "stock": 15
+        }
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    assert data["name"] == "Monitor"
+    assert data["price"] == 300
+    assert data["stock"] == 15
