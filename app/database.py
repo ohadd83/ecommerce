@@ -25,7 +25,7 @@ products_db = [
     },
     {
         "id": 5,
-        "name": "TV"
+        "name": "TV",
         "price": 2500.00,
         "stock": 5
     }
