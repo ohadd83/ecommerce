@@ -17,6 +17,18 @@ products_db = [
         "price": 40.00,
         "stock": 50
     }
+    {   
+        "id": 4,
+        "name": "MobilePhone",
+        "price": 1200.00,
+        "stock": 3
+    },
+    {
+        "id": 5,
+        "name": "TV"
+        "price": 2500.00,
+        "stock": 5
+    }
 ]
 
 
