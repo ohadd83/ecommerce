@@ -76,12 +76,12 @@ def test_create_product():
 
 
 def test_complete_flow():
-    create_product = client.post(
+    response = client.post(
             "/products/",
             json={
                 "name": "laptop",
                 "price": 3500,
-                "stoc": 50
+                "stock": 50
                 }
             )
     assert response.status_code == 200
