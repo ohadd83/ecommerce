@@ -35,3 +35,20 @@ def test_product_not_found():
     assert response.status_code == 200
 
     assert response.json()["error"] == "Product not found"
+
+def test_create_order():
+    response = client.post(
+        "/orders/",
+        json={
+            "product_id": 1,
+            "quantity": 2
+        }
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    assert data["product_id"] == 1
+    assert data["quantity"] == 2
+    assert data["status"] == "created"
