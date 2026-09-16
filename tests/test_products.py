@@ -72,3 +72,37 @@ def test_create_product():
     assert data["name"] == "Monitor"
     assert data["price"] == 300
     assert data["stock"] == 15
+
+
+
+def test_complete_flow():
+    create_product = client.post(
+            "/products/",
+            json={
+                "name": "laptop",
+                "price": 3500,
+                "stoc": 50
+                }
+            )
+    assert response.status_code == 200
+
+    product = response.json
+    product_id = product["id"]
+
+    response = client.post(
+        "/orders/",
+        json={
+            "product_id": product_id,
+            "quantity": 2
+        }
+    )
+
+
+
+
+
+
+
+
+
+
