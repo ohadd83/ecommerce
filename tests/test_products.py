@@ -97,7 +97,7 @@ def test_complete_flow():
         }
     )
 
-
+    assert response.status_code == 200
 
 
 
