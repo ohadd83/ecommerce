@@ -121,6 +121,20 @@ pipeline {
             }
         }
 
+// approve for production 
+
+        stage('Approval for Production') {
+
+            steps {
+
+                timeout(time: 30, unit: 'MINUTES') {
+
+                    input message: 'Deploy this version to production?',
+                          ok: 'Deploy'
+                }
+            }
+        }
+
 
 //  deploy application
 
